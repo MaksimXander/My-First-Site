@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Site</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&subset=cyrillice" rel="stylesheet">
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="hero">
@@ -24,13 +26,13 @@
         <!-- /.hero-header -->
         <div class="hero-content">
             <div class="hero-text">
-                <span class="hero-subtitle">Фрилансер</span>
-                <h1 class="hero-title">Максим Царенко</h1>
-                <p class="hero-description">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина</p>
-                <button class="button hero-button">Бесплатная консультация</button>
+                <span class="hero-subtitle wow fadeInRight" data-wow-delay="0,2s">Фрилансер</span>
+                <h1 class="hero-title wow fadeInRight" data-wow-delay="0,4s">Артем Исламов</h1>
+                <p class="hero-description wow fadeInRight" data-wow-delay="0,6s">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина</p>
+                <button class="button hero-button wow fadeInRight" data-wow-delay="0,8s">Бесплатная консультация</button>
             </div>
             <!-- /.hero-text -->
-            <div class="hero-avatar">
+            <div class="hero-avatar wow fadeIn" data-wow-delay="1,5s">
             </div>
             <!-- /.hero-avatar -->
         </div>
@@ -95,6 +97,26 @@
     <section class="section projects">
         <div class="container">
             <h2 class="section-title">Последнии проекты</h2>
+
+            <div class="swiper container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
 
             <div class="projects-slider">
                 <div class="projects-slide">
@@ -161,13 +183,13 @@
         </div>
         <div class="contacts-mail">
         <h4 class="contacts-title">Почта</h4>
-        <a href="maksontc@yandex.ru" class="contacts-link">maksontc@yandex.ru</a>
+        <a href="ivanov@mail.ru" class="contacts-link">ivanov@mail.ru</a>
         </div>
         <div class="contacts-social">
         <h4 class="contacts-title">Соцсети</h4>
-        <a href="#" class="contacts-link">t.me/maksontc</a>
-        <a href="#" class="contacts-link">t.me/maksontc</a>
-        <a href="#" class="contacts-link">t.me/maksontc</a>
+        <a href="#" class="contacts-link">t.me/ivanov</a>
+        <a href="#" class="contacts-link">t.me/ivanov</a>
+        <a href="#" class="contacts-link">t.me/ivanov</a>
         </div>
         </div>
         <div class="social-links">
@@ -182,6 +204,9 @@
         </div>
         </footer>
 
+        <script src="js/wow.min.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
 
 </body>
 </html>
